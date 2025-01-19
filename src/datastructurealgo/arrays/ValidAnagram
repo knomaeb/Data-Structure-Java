@@ -1,0 +1,42 @@
+* Explanation of isAnagram1
+How It Works
+ 1. Null or Length Check:
+     -> If either s or t is null or their lengths are not equal, they cannot be anagrams, so the method immediately returns false.
+
+  2. Convert Strings to Character Arrays:
+     ->The method converts both strings into character arrays so their individual characters can be sorted.
+
+  3. Sorting:
+     ->Both character arrays are sorted using Arrays.sort(). For two strings to be anagrams, their sorted character arrays must be identical.
+
+  4. Comparison:
+     ->Arrays.equals() is used to check if the sorted character arrays are equal. If they are, the strings are anagrams; otherwise, they are not.
+
+Complexity
+Time Complexity: O(nlogn), where n is the length of the strings, due to sorting.
+Space Complexity: O(n), for storing the character arrays
+
+* Explanation of isAnagram2
+  1. Two strings are anagrams if they contain the same characters with the same frequencies.
+  2. Use an array of size 26 (for lowercase English letters) or 256 (for ASCII) to count the occurrences of each character in the first string and decrement the counts for characters in the second string.
+  3. At the end, if all counts are zero, the strings are anagrams.
+
+  Explanation:
+  1. Frequency Array:
+     -> The array charCounts keeps track of the frequency of each character in the strings.
+     -> For every character in s, increment the corresponding count.
+     -> For every character in t, decrement the corresponding count.
+
+  2. Check Frequencies:
+     -> After processing both strings, if all values in the charCounts array are zero, the strings are anagrams. If any value is non-zero, they are not.
+
+  3. Validation:
+     -> If s and t differ in length or if their character counts don't balance out, the method returns false.
+
+  Complexity Analysis:
+    1. Time Complexity: O(n)
+       - One loop to traverse both strings O(n) and another loop to check the counts (O(26)=O(1)).
+       - The traversal dominates the runtime, so the complexity is O(n).
+  Space Complexity:
+    1. O(n):
+       - The charCounts array has a fixed size of 26 for lowercase English letters (constant space).
