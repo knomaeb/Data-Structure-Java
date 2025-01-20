@@ -1,0 +1,11 @@
+A linked list is a data structure where elements, called nodes, are connected using pointers. Each node contains:
+
+  1. Data: The value of the node.
+  2. Next: A reference (or pointer) to the next node in the sequence.
+
+   -> The key feature of a linked list is that the elements are not stored in contiguous memory locations. This makes it easy to insert and delete elements dynamically without reallocating or reordering existing elements.
+
+Types of Linked Lists
+  1. Singly Linked List: Each node has a reference to the next node.
+  2. Doubly Linked List: Each node has references to both the next and the previous node.
+  3. Circular Linked List: The last node references back to the first node, forming a circle.

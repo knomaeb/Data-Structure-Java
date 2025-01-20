@@ -1,0 +1,12 @@
+A dynamic array in Java refers to an array-like data structure that can grow or shrink in size dynamically, unlike regular arrays which have a fixed size. The most commonly used dynamic array in Java is implemented using the ArrayList class, part of the java.util package.
+
+Key Features of Dynamic Arrays
+    1. Resizable:
+       -> The size of a dynamic array is automatically adjusted as elements are added or removed.
+       -> You don't need to specify the size at creation.
+
+    2. Efficient Growth:
+       -> When the underlying array gets full, a new larger array is created internally, and all existing elements are copied to the new array.
+
+    3. Ease of Use:
+       -> Provides methods for adding, removing, and accessing elements efficiently.
