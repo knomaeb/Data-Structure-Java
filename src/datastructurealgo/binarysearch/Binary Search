@@ -1,0 +1,11 @@
+Binary Search Concept in Java:
+      -> Binary Search is an efficient algorithm for finding a target element in a sorted array.
+      -> It works by repeatedly dividing the search range in half and determining whether the target value lies in the left or right half.
+      -> This method has a time complexity of O(log n), making it faster than linear search for large datasets.
+
+How Binary Search Works:
+    1. Start with the middle element:
+       - If the middle element matches the target, return its index.
+       - If the target is smaller than the middle element, search the left half of the array.
+       - If the target is larger, search the right half.
+    2. Repeat the process until the element is found or the range becomes empty.
